@@ -44,3 +44,12 @@ jobs:
         name: TestNG Results
         path: target/surefire-reports/junitreports/TEST-*.xml
         reporter: java-junit
+        
+    - name: Generate Extent Report
+      run: mvn surefire-report:report-only
+
+    - name: Upload Extent Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: extent-report
+        path: target/surefire-reports
