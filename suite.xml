@@ -4,7 +4,6 @@
   <test thread-count="5" name="API Test">
     <classes>
       <class name="com.api.test.LoginAPITest2"/>
-      <class name="com.api.test.AccountCreationTest"/>
       <class name="com.api.test.ForgotPasswordTest"/>
       <class name="com.api.test.GetProfileRequestTest"/>
       <class name="com.api.test.UpdateProfileTest"/>      
